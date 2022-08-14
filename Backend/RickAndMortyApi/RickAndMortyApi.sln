@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RickAndMortyApi", "RickAndMortyApi\RickAndMortyApi.csproj", "{7C044520-7D97-4359-A4DF-E78D6FE8AF54}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RickAndMortyApi.DAL", "RickAndMortyApi.DAL\RickAndMortyApi.DAL.csproj", "{56A98580-29F4-48AA-93FB-7A4346FF21BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C044520-7D97-4359-A4DF-E78D6FE8AF54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C044520-7D97-4359-A4DF-E78D6FE8AF54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C044520-7D97-4359-A4DF-E78D6FE8AF54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C044520-7D97-4359-A4DF-E78D6FE8AF54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56A98580-29F4-48AA-93FB-7A4346FF21BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56A98580-29F4-48AA-93FB-7A4346FF21BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56A98580-29F4-48AA-93FB-7A4346FF21BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56A98580-29F4-48AA-93FB-7A4346FF21BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13FCC1D1-F06F-40A6-BA13-79A5EFE66D1E}
+	EndGlobalSection
+EndGlobal
