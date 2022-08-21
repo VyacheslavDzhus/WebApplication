@@ -1,0 +1,28 @@
+<div class="container d-flex justify-content-center">
+  <div class="m-5">
+    <h1 class="d-flex justify-content-center">Create a new user</h1>
+    <div class="register-form">
+      <div class="form-group">
+        <label for="inputName">Name</label>
+        <input [(ngModel)] ="user.name" type="email" class="form-control" id="inputName">
+      </div>
+      <div class="form-group">
+        <label for="inputLastName">Last Name</label>
+        <input [(ngModel)] ="user.lastName" type="text" class="form-control" id="inputLastName">
+      </div>
+      <div class="form-group">
+        <label for="inputLogin">Login</label>
+        <input [(ngModel)] ="user.login" type="email" class="form-control" id="inputLogin">
+      </div>
+      <div class="form-group">
+        <label for="inputPassword">Password</label>
+        <input [(ngModel)] ="user.password" type="password" class="form-control" id="inputPassword">
+      </div>
+      <div class = "d-flex justify-content-center">
+        <button (click)="register(user)" class="btn btn-outline-success my-2 my-sm-0 mr-3 ">Create</button>
+      </div>
+    </div>
+  </div>
+  
+</div>
+

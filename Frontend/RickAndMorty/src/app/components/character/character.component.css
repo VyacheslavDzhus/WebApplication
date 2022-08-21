@@ -1,0 +1,31 @@
+.main{
+    background-color: #383c44;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    width: 1000px;
+    box-shadow: 0 0 5px 5px rgb(39, 136, 14, 0.7);
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    width: 225px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 5px 5px rgba(20, 20, 20, 0.7);
+    background-color: #383c44;
+    color: white;
+    margin: 10px;
+}
+
+img{
+    height: 125px;
+    width: 125px;
+    box-shadow: 0 0 5px 5px rgb(39, 136, 14, 0.7);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}

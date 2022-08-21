@@ -6,6 +6,6 @@ namespace RickAndMortyApi.Services
     {
         Task<UserDto> Create(UserDto dto);
         Task<string> GetJwtToken(UserDto dto);
-
+        Task<UserDto> GetUser(UserDto dto);
     }
 }

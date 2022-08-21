@@ -2,6 +2,7 @@
 using RickAndMortyApi.DAL.Models;
 using RickAndMortyApi.Models;
 using RickAndMortyApi.Services;
+using RickAndMortyApi.Extensions;
 
 namespace RickAndMortyApi.Controllers
 {
@@ -24,13 +25,17 @@ namespace RickAndMortyApi.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<ActionResult<string>> Login(UserDto reqest)
+        public async Task<ActionResult<LoginDto>> Login(UserDto reqest)
         {
             try
             {
                 var jwtToken = await userService.GetJwtToken(reqest);
 
-                return Ok(jwtToken);
+                var user = await userService.GetUser(reqest);
+
+                var loginDto = new LoginDto(user.ToDomain(), jwtToken);
+
+                return Ok(loginDto);
             }
             catch (NullReferenceException)
             {

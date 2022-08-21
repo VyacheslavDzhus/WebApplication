@@ -50,5 +50,19 @@ namespace RickAndMortyApi.Services
 
             return jwtToken;
         }
+
+        public async Task<UserDto> GetUser(UserDto dto)
+        {
+            var users = await userRepo.GetAll();
+
+            var user = users.ToList().Find(x => x.UserName == dto.Login);
+
+            if (user is null)
+            {
+                throw new NullReferenceException();
+            }
+
+            return user.ToModel();
+        }
     }
 }

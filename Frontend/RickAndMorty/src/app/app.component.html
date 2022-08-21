@@ -1,0 +1,19 @@
+
+<div>
+  <nav class="navbar navbar-dark bg-dark d-flex justify-content-between">
+      <div>
+        <span class="navbar-title">Rick and Morty API</span>
+        <a routerLink="/register-component" routerLinkActive="active" class="btn btn-outline-success my-2 my-sm-0 mr-3" role="button" ariaCurrentWhenActive="page">Register</a>
+        <a routerLink="/login-component" routerLinkActive="active" class="btn btn-outline-success my-2 my-sm-0 mr-3" role="button" ariaCurrentWhenActive="page">Login</a>
+
+        <a routerLink="/character-component" routerLinkActive="active" class="btn btn-outline-success my-2 my-sm-0" role="button" ariaCurrentWhenActive="page">Get Started</a>         
+      </div> 
+      <div>
+        <span class="userBlock mr-3">{{userName}} {{userLastName}}</span>
+        <button (click)="logout()" class="btn btn-outline-success my-2 my-sm-0 mr-3" role="button">Log out</button>
+      </div>    
+      
+  </nav>
+</div>
+<router-outlet></router-outlet>
+
